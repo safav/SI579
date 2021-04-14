@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matching Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <link href="fancy-timer.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="main.js" defer></script>
+
+</head>
+
+<body>
+    <canvas id="my-canvas"></canvas>
+    <header>
+        <h1 id="title">Matching Game</h1>
+
+        <div id="modebuttons" role="group">
+            <button id="easy" type="button" class="btn btn-outline-dark active">Easy</button>
+            <button id="medium" type="button" class="btn btn-outline-dark">Medium</button>
+            <button id="hard" type="button" class="btn btn btn-outline-dark">Hard</button>
+        </div>
+        <div id="resetdiv">
+            <button id="restart" type="button" class="btn btn-secondary">Restart Game</button>
+        </div>
+        <div class="form-check form-switch" id="sounddiv">
+            <input class="form-check-input" type="checkbox" id="soundbutton" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked">Play Sound</label>
+        </div>
+
+        <h2 id="number-of-matches">0 matches</h2>
+
+        <div id="clock" class="ft"></div>
+    </header>
+    <main id="container">
+
+    </main>
+</body>
