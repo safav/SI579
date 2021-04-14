@@ -122,6 +122,11 @@ header {
     margin: auto;
 }
 
+#wallpaper {
+    background-image: url('4347464.jpg');
+    background-size: contain;
+}
+
 .flip-card {
     width: 100px;
     height: 50px;
