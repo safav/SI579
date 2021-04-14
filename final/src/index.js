@@ -95,7 +95,7 @@ function startGame() {
 
         let flipcardback = document.createElement("div");
         flipcardback.className = 'flip-card-back';
-        flipcardback.style.backgroundImage = "url('" + cards[cardnumber - 1] + ".png')";
+        flipcardback.style.backgroundImage = "url('" + cards[cardnumber - 1] + ".PNG')";
 
         flipcardinner.appendChild(flipcardfront);
         flipcardinner.appendChild(flipcardback);
