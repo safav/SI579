@@ -1,12 +1,12 @@
 .flip-card {
     background-color: transparent;
-    border: 1px solid #f1f1f1;
+    border: 1px solid transparent;
     perspective: 1000px;
     min-width: 60px;
     min-height: 120px;
 }
 
-/* This container is needed to position the front and back side */
+
 
 .flip-card-inner {
     position: relative;
@@ -17,7 +17,6 @@
     transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 
 .flipped .flip-card-inner {
     transform: rotateY(180deg);
@@ -39,7 +38,7 @@
     backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
+/* Style the front side  */
 
 .flip-card-front {
     background-color: #ffd773;
@@ -92,6 +91,14 @@ header {
     justify-self: center;
 }
 
+#modebuttons button {
+    background-color: white;
+}
+
+#modebuttons button:hover, .active {
+    background-color: #212529 !important;
+}
+
 #resetdiv {
     grid-row: 2;
     grid-column: 4/6;
@@ -122,9 +129,12 @@ header {
     margin: auto;
 }
 
-#wallpaper {
-    background-image: url('4347464.jpg');
-    background-size: contain;
+img {
+	position: absolute;
+	z-index: -10000;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
 }
 
 .flip-card {

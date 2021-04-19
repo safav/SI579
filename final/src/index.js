@@ -24,6 +24,10 @@ const options = {
         if (started) {
             let matched = document.getElementById('number-of-matches');
             matched.innerText = "You Lose 😭 Try again";
+            if (playSound) {
+                createjs.Sound.stop();
+                createjs.Sound.play("lose");
+            }
         }
         started = false;
     }
@@ -35,6 +39,7 @@ createjs.Sound.registerSound("gamewin.mp3", "victory");
 createjs.Sound.registerSound("drop_003.ogg", "button");
 createjs.Sound.registerSound("gamematched6.mp3", "cardmatch");
 createjs.Sound.registerSound("clock.mp3", "warning");
+createjs.Sound.registerSound("lost.mp3", "lose");
 
 // Fisher-Yates (aka Knuth) Shuffle
 function shuffle(array) {
